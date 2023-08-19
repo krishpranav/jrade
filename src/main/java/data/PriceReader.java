@@ -9,6 +9,14 @@ public class PriceReader implements Closeable{
         this.stream = new DataInputStream(new BufferedInputStream(new FileInputStream(file)));
     }
 
+    public PriceBean readPrice() {
+        try {
+            
+        } catch (IOException e) {
+            return null;
+        }
+    }
+
     @Override
     public void close() throws IOException {
         stream.close();
